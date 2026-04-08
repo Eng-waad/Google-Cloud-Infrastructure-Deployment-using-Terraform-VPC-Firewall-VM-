@@ -26,8 +26,8 @@ graph TD
 
     VPC --> FW[Firewall Rule<br>Allow: SSH, HTTP, RDP, ICMP]
     VPC --> VM1[VM Instance<br>mynet-vm-1]
-📂 Project Structure
 
+📂 Project Structure
 tfinfra/
 ├── provider.tf
 ├── mynetwork.tf
