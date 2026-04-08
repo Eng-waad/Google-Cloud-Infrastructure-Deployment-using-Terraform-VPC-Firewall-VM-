@@ -20,14 +20,11 @@ This project demonstrates how to provision and manage Google Cloud infrastructur
 
 ##  Architecture Diagram
 
-```mermaid
-graph TD
-    T[Terraform] --> VPC[VPC Network - mynetwork]
-
-    VPC --> FW[Firewall Rule<br>Allow: SSH, HTTP, RDP, ICMP]
-    VPC --> VM1[VM Instance<br>mynet-vm-1]
-
+    [Terraform] --> VPC Network --> VM Instance 
+                               ↘ Firewall Rule
+    
  Project Structure
+ 
 tfinfra/
 ├── provider.tf
 ├── mynetwork.tf
