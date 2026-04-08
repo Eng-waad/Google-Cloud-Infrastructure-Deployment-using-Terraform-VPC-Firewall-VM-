@@ -64,13 +64,17 @@ terraform apply
 
  Screenshots
 
-Terraform Apply
+Terraform Apply Success
 
 VPC Network
 
 Firewall Rule
 
 VM Instance
+
+SSH Connection
+
+Project Structure
 
  Key Learning Outcomes
  • Understanding Terraform modules
