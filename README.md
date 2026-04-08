@@ -21,9 +21,13 @@ This project demonstrates how to provision and manage Google Cloud infrastructur
 ##  Architecture Diagram
 
 Terraform
+
 ↓
+
 VPC Network (mynetwork)
+
 ↙        ↘
+
 Firewall     VM Instance
 
 ---
