@@ -26,7 +26,7 @@ Terraform
 
 VPC Network (mynetwork)
 
-↙        ↘
+   ↙       ↘
 
 Firewall     VM Instance
 
