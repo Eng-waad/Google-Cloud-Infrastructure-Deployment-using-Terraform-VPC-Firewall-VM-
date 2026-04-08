@@ -31,10 +31,15 @@ Firewall     VM Instance
 ## 📂 Project Structure
 
 tfinfra/
+
 ├── provider.tf
+
 ├── mynetwork.tf
+
 └── instance/
+
 ├── main.tf
+
 └── variables.tf
 
 ---
