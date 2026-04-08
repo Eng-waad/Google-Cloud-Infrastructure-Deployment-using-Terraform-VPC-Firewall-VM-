@@ -20,20 +20,28 @@ This project demonstrates how to provision and manage Google Cloud infrastructur
 
 ##  Architecture Diagram
 
-    [Terraform] --> VPC Network --> VM Instance 
-                               ↘ Firewall Rule
-    
- Project Structure
- 
+Terraform
+↓
+VPC Network (mynetwork)
+↙        ↘
+Firewall     VM Instance
+
+---
+
+## 📂 Project Structure
+
 tfinfra/
 ├── provider.tf
 ├── mynetwork.tf
 └── instance/
-    ├── main.tf
-    └── variables.tf
+├── main.tf
+└── variables.tf
 
- Sample Terraform Resource
+---
 
+##  Sample Terraform Resource
+
+```hcl
 resource "google_compute_network" "mynetwork" {
   name                    = "mynetwork"
   auto_create_subnetworks = true
@@ -47,7 +55,7 @@ terraform apply
 
  Screenshots
 
-Terraform Apply Success
+Terraform Apply
 
 VPC Network
 
@@ -55,11 +63,8 @@ Firewall Rule
 
 VM Instance
 
-SSH Connection
-
-Project Structure
-
  Key Learning Outcomes
  • Understanding Terraform modules
- • Deploying infrastructure on GCP using IaC
- • Managing networking and firewall rules
+ • Deploying infrastructure using IaC
+ • Managing GCP networking and firewall rules
+  
